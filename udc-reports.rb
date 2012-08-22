@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'rest-client'
 require 'json'
-require "jcode"
 
 def rest 
   resource ||= RestClient::Resource.new((ENV['NEO4J_URL'] || "http://localhost:8080") + "/api/query.json")
